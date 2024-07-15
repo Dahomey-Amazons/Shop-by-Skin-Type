@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Products</h1>
+        <div id="filter">
+            <label for="brand-filter">Filter by Brand:</label>
+            <select id="brand-filter" onchange="filterProducts()">
+                <option value="all">All Brands</option>
+                <option value="Brand A">Brand A</option>
+                <option value="Brand B">Brand B</option>
+                <option value="Brand C">Brand C</option>
+                <option value="Brand D">Brand D</option>
+                <option value="Brand E">Brand E</option>
+            </select>
+        </div>
+        <div id="product-list">
+            <!-- Products will be dynamically inserted here based on selection -->
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
